@@ -29,10 +29,6 @@ namespace ZufallsGedicht {
         _ordersOfTheCaptain.splice(randomNumberTwo, 1);
         _devilFruits.splice(randomNumberThree, 1);
         return verse;
-
     }
-
-
-
-
+    
 }
