@@ -19,7 +19,7 @@ namespace ZufallsGedicht {
         console.log(getVerse(strawHatPirates, ordersOfTheCaptain, devilFruits));
     }
 
-    function getVerse(_strawHatPirates: string[], _ordersOfTheCaptain: string[], _devilFruits: string[]) {
+    function getVerse(_strawHatPirates: string[], _ordersOfTheCaptain: string[], _devilFruits: string[]): string {
         let verse: string = "";
         let randomNumberOne: number = Math.floor(Math.random() * _strawHatPirates.length);
         let randomNumberTwo: number = Math.floor(Math.random() * _ordersOfTheCaptain.length);
