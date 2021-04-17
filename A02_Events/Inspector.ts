@@ -26,7 +26,7 @@ namespace Inspector {
         let spanner: HTMLSpanElement = <HTMLSpanElement>document.querySelector(".spanner");
         spanner.style.left = (x + 20) + "px";
         spanner.style.top = (y + 20) + "px";
-        spanner.style.display = "";
+        // spanner.style.display = "";
         let targetDOM: EventTarget = <EventTarget>_event.target;
         spanner.innerHTML = "target:" + targetDOM + "<br>" + "Mouse Position - left:" + x + "px; top:" + y + "px";
     }
