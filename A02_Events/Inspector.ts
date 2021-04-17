@@ -23,16 +23,17 @@ namespace Inspector {
     function setInfoBox(_event: MouseEvent): void {
         let x: number = _event.clientX;
         let y: number = _event.clientY;
-        let spanner: HTMLSpanElement = <HTMLSpanElement>document.querySelector("#spanner");
-        spanner.style.left = x + "px";
-        spanner.style.top = y + "px";
-        spanner.style.display = "";
-        spanner.innerHTML = "target:" + _event.target + "<br>" + "Mouse Position - left:" + x + "px; top:" + y + "px";
+        let spanner: HTMLSpanElement = <HTMLSpanElement>document.querySelector(".spanner");
+        spanner.style.left = (x + 20) + "px";
+        spanner.style.top = (y + 20) + "px";
+        let targetDOM: EventTarget = <EventTarget>_event.target;
+        spanner.innerHTML = "target:" + targetDOM + "<br>" + "Mouse Position - left:" + x + "px; top:" + y + "px";
     }
 
     function logInfo(_event: Event): void {
         console.log(_event.type);
         console.log(_event.target);
         console.log(_event.currentTarget);
+        console.log(_event.composedPath());
     }
 }

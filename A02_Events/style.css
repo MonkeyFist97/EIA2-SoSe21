@@ -36,6 +36,5 @@ div#righty {
     height: 100px;
     width: 200px;
     border: black solid 2px;
-    position: absolute;
-    display: none;
+    position: fixed;
 }
