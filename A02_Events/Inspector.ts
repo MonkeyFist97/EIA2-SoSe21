@@ -32,9 +32,15 @@ namespace Inspector {
     }
 
     function logInfo(_event: Event): void {
-        console.log(_event.type);
-        console.log(_event.target);
-        console.log(_event.currentTarget);
-        console.log(_event.composedPath());
+        // console.log(_event.type);
+        // console.log(_event.target);
+        // console.log(_event.currentTarget);
+        // console.log(_event.composedPath());
+        // console.log(_event.target);      
+        let newValue: HTMLElement = <HTMLElement>_event.target;
+        // console.log(newValue);       
+        let newValue2: string = <string>newValue.querySelector("p").innerHTML;
+        console.log(newValue2);
+        newValue.style.backgroundColor = "#204474";
     }
 }
