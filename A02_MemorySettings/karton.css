@@ -1,10 +1,12 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    align-items: center;
-    justify-content: center;
-    display: grid;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 h1{
@@ -12,12 +14,19 @@ h1{
     text-align-last: center;
 }
 
-.hidden{
+.gone{
+    display: none;
+}
+
+.invisible{
     visibility: hidden;
 }
 
-.gone{
-    display: none;
+#example{
+    border: black solid 2px;
+    position: absolute;
+    left: 1200px;
+    top: 200px;
 }
 
 #form{
@@ -25,30 +34,16 @@ h1{
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
 }
 
 #chooseAmount{
     height: 40px;
     width: 40px;
     margin-bottom: 10px;
-}
-
-#examples{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-
-#exampleCard1{
-    border: black solid 2px;
-    height: 50px;
-    width: 50px;
-}
-
-#exampleCard2{
-    border: black solid 2px;
-    height: 100px;
-    width: 100px;
 }
 
 #chooseFonts{
@@ -66,4 +61,49 @@ h1{
 
 #courier{
     font-family: 'Courier New', Courier, monospace;
+}
+
+#startGame{
+    width: 200px;
+    height: 60px;
+    font-size: larger;
+    font-weight: 1000;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+
+#startGame:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+#deck{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    height: 80vh;
+    width: 160vh;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-right: 2px;
+    margin-left: 2px;
+    border: solid black 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: large;
+}
+
+#timer{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
 }

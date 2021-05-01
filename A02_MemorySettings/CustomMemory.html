@@ -15,37 +15,44 @@
     <h1>Memory Game</h1>
 
     <div id="form">
-        <form id="settings" action="/action_page.php">
+        <form>
+            <!-- 0 -->
             <label for="amountCards">Choose the Amount of Pairs:</label>
-            <input id="chooseAmount" type="number" value=""><br>
+            <input id="chooseAmount" name="chooseAmount" type="number" value="5"><br>
 
+            <!-- 1 -->
             <label for="sizeCards">Choose Size of Cards:</label>
-            <input id="chooseSize" type="range" step="1" min="50" max="100" value=""><br>
-            <div id="examples">
-                <div id="exampleCard1">min</div>
-                <div id="exampleCard2">max</div>
-            </div>
+            <input id="chooseSize" name="chooseSize" type="range" step="1" min="100" max="150" value="100"><br>
 
             <span>Choose your Colors:</span><br>
 
+            <!-- 2 -->
             <label for="backgroundColor">Background:</label>
-            <input id="" type="color" value="#ffffff"><br>
+            <input name="backgroundColor" type="color" value="#ffffff"><br>
 
+            <!-- 3 -->
             <label for="backsideColor">Backside of Card:</label>
-            <input id="" type="color" value="#ffffff"><br>
+            <input name="backsideColor" type="color" value="#ffffff"><br>
 
+            <!-- 4 -->
             <label for="fontColor">Fonts:</label>
-            <input id="" type="color" value="#000000"><br>
+            <input name="fontColor" type="color" value="#000000"><br>
 
+            <!-- 5 -->
             <label for="chooseFonts">Choose a Font:</label>
             <select id="chooseFonts" name="fonts">
                 <option id="segoe" value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe UI</option>
                 <option id="arial" value="Arial, Helvetica, sans-serif">Arial</option>
                 <option id="courier" value="'Courier New', Courier, monospace">Courier</option>
             </select><br>
-
-            <input type="submit" value="Start Game">
         </form>
+    </div>
+    <div id="example">
+        Example Card
+    </div>
+    <button id="startGame" name="startGame">Start Game!</button>
+    <p id="timer"></p>
+    <div id="deck">
     </div>
 
 </body>
