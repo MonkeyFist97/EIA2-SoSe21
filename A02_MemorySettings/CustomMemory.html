@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/A02_MemorySettings/karton.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Memory Game</h1>
+
+    <div id="form">
+        <form id="settings" action="/action_page.php">
+            <label for="amountCards">Choose the Amount of Pairs:</label>
+            <input id="chooseAmount" type="number" value=""><br>
+
+            <label for="sizeCards">Choose Size of Cards:</label>
+            <input id="chooseSize" type="range" step="1" min="50" max="100" value=""><br>
+            <div id="examples">
+                <div id="exampleCard1">min</div>
+                <div id="exampleCard2">max</div>
+            </div>
+
+            <span>Choose your Colors:</span><br>
+
+            <label for="backgroundColor">Background:</label>
+            <input id="" type="color" value="#ffffff"><br>
+
+            <label for="backsideColor">Backside of Card:</label>
+            <input id="" type="color" value="#ffffff"><br>
+
+            <label for="fontColor">Fonts:</label>
+            <input id="" type="color" value="#000000"><br>
+
+            <label for="chooseFonts">Choose a Font:</label>
+            <select id="chooseFonts" name="fonts">
+                <option id="segoe" value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe UI</option>
+                <option id="arial" value="Arial, Helvetica, sans-serif">Arial</option>
+                <option id="courier" value="'Courier New', Courier, monospace">Courier</option>
+            </select><br>
+
+            <input type="submit" value="Start Game">
+        </form>
+    </div>
+
+</body>
+
+</html>

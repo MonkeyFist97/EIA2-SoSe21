@@ -23,14 +23,21 @@ var Inspector;
         let spanner = document.querySelector(".spanner");
         spanner.style.left = (x + 20) + "px";
         spanner.style.top = (y + 20) + "px";
+        // spanner.style.display = "";
         let targetDOM = _event.target;
         spanner.innerHTML = "target:" + targetDOM + "<br>" + "Mouse Position - left:" + x + "px; top:" + y + "px";
     }
     function logInfo(_event) {
-        console.log(_event.type);
-        console.log(_event.target);
-        console.log(_event.currentTarget);
-        console.log(_event.composedPath());
+        // console.log(_event.type);
+        // console.log(_event.target);
+        // console.log(_event.currentTarget);
+        // console.log(_event.composedPath());
+        // console.log(_event.target);      
+        let newValue = _event.target;
+        // console.log(newValue);       
+        // let newValue2: string = <string>newValue.querySelector("p").innerHTML;
+        // console.log(newValue2);
+        newValue.style.backgroundColor = "#204474";
     }
 })(Inspector || (Inspector = {}));
 //# sourceMappingURL=Inspector.js.map

@@ -39,8 +39,8 @@ namespace Inspector {
         // console.log(_event.target);      
         let newValue: HTMLElement = <HTMLElement>_event.target;
         // console.log(newValue);       
-        let newValue2: string = <string>newValue.querySelector("p").innerHTML;
-        console.log(newValue2);
+        // let newValue2: string = <string>newValue.querySelector("p").innerHTML;
+        // console.log(newValue2);
         newValue.style.backgroundColor = "#204474";
     }
 }
