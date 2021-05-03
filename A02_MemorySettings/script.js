@@ -23,7 +23,6 @@ var MemorySettings;
         divForm.addEventListener("change", handleChange);
         deckDOMElement = document.querySelector("#deck");
         startGame.addEventListener("click", createCards);
-        handleChange();
     }
     function handleChange() {
         let formData = new FormData(document.forms[0]);

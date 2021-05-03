@@ -27,6 +27,8 @@ h1{
     position: absolute;
     left: 1200px;
     top: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 #form{

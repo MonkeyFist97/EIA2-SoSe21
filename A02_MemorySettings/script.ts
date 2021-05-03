@@ -24,7 +24,6 @@ namespace MemorySettings {
         divForm.addEventListener("change", handleChange);
         deckDOMElement = <HTMLDivElement>document.querySelector("#deck");
         startGame.addEventListener("click", createCards);
-        handleChange();
     }
 
     function handleChange(): void {
