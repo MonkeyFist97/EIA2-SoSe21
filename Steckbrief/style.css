@@ -9,6 +9,11 @@ h1 {
     color: darkorange;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    font-size: 40px
+}
+
+.fab {
+    font-size: ;
 }
 
 /* DIVS */
@@ -18,7 +23,7 @@ h1 {
     border-radius: 5px;
     width: max-content;
     margin-bottom: 2px;
-    padding: 5px 2px 5px 0px;
+    padding: 5px 0px 10px 0px;
 }
 
 .red {
@@ -27,7 +32,7 @@ h1 {
     border-radius: 5px;
     width: max-content;
     margin-bottom: 2px;
-    padding: 5px 2px 5px 0px;
+    padding: 5px 0px 10px 0px;
 }
 
 .green {
@@ -36,7 +41,7 @@ h1 {
     border-radius: 5px;
     width: max-content;
     margin-bottom: 2px;
-    padding: 5px 2px 5px 0px;
+    padding: 5px 0px 10px 0px;
 }
 
 .yellow {
@@ -45,7 +50,7 @@ h1 {
     border-radius: 5px;
     width: max-content;
     margin-bottom: 2px;
-    padding: 5px 2px 5px 0px;
+    padding: 5px 0px 10px 0px;
 }
 
 .turquoise {
@@ -54,7 +59,7 @@ h1 {
     border-radius: 5px;
     width: max-content;
     margin-bottom: 2px;
-    padding: 5px 2px 5px 0px;
+    padding: 5px 0px 10px 0px;
 }
 
 .grey {
@@ -63,7 +68,7 @@ h1 {
     border-radius: 5px;
     width: max-content;
     margin-bottom: 2px;
-    padding: 5px 2px 5px 0px;
+    padding: 5px 0px 10px 0px;
 }
 
 button {
