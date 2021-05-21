@@ -1,0 +1,93 @@
+body {
+    background: rgb(190, 184, 177);
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    color: darkorange;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* DIVS */
+.blue {
+    background-color: rgb(78, 78, 255);
+    border: black 2px solid;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 2px;
+    padding: 5px 2px 5px 0px;
+}
+
+.red {
+    background-color: rgb(197, 104, 104);
+    border: black 2px solid;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 2px;
+    padding: 5px 2px 5px 0px;
+}
+
+.green {
+    background-color: rgb(97, 184, 89);
+    border: black 2px solid;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 2px;
+    padding: 5px 2px 5px 0px;
+}
+
+.yellow {
+    background-color: rgb(202, 196, 104);
+    border: black 2px solid;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 2px;
+    padding: 5px 2px 5px 0px;
+}
+
+.turquoise {
+    background-color: rgb(112, 186, 199);
+    border: black 2px solid;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 2px;
+    padding: 5px 2px 5px 0px;
+}
+
+.grey {
+    background-color: rgb(153, 153, 153);
+    border: black 2px solid;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 2px;
+    padding: 5px 2px 5px 0px;
+}
+
+button {
+    background: blanchedalmond;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: linear-gradient(white, grey);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: list-item;
+    padding: 2px;
+}
+li a{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+}
+
