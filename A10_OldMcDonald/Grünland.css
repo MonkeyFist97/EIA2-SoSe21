@@ -1,0 +1,84 @@
+html {
+    background-repeat: no-repeat;
+    background-image: url("c508a59cb788a70d5a8cd07d569257ca.png");
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+}
+
+#image {
+    content: url("papyrus.png");
+    z-index: -1;
+    width: 900px;
+    height: 1150px;
+    position: relative;
+    bottom: 30px;
+}
+
+/* Textbereich */
+#textfeld {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+p#songText {
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+p#munchingAnimal {
+    margin-bottom: 30px;
+}
+
+/* ------- */
+
+
+/* LEFTOVER */
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#leftover {
+    margin-top: 20px;
+    border: black solid 2px;
+    display: grid;
+    grid-column: auto;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* ------ */
+
+/* BUTTONS */
+button {
+    margin-top: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: rgb(209, 185, 148);
+}
+
+button:hover {
+    background-color: grey;
+}
+
+
+
