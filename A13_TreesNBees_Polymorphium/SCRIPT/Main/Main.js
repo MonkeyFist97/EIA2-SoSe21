@@ -32,12 +32,12 @@ var L11_TreesNBees;
         do {
             let flowerType = Math.floor(Math.random() * 2) + 1;
             if (flowerType == 1) {
-                flowers.push(new L11_TreesNBees.GoldenFlowers(xPos, 50 + (L11_TreesNBees.crc2.canvas.height * L11_TreesNBees.golden), (50 + Math.random() * 600)));
+                flowers.push(new L11_TreesNBees.GoldenFlowers(xPos, (L11_TreesNBees.crc2.canvas.height * L11_TreesNBees.golden), (50 + Math.random() * 600)));
             }
             else {
-                flowers.push(new L11_TreesNBees.PurpleFlowers(xPos, 50 + (L11_TreesNBees.crc2.canvas.height * L11_TreesNBees.golden), (50 + Math.random() * 600)));
+                flowers.push(new L11_TreesNBees.PurpleFlowers(xPos, (L11_TreesNBees.crc2.canvas.height * L11_TreesNBees.golden), (50 + Math.random() * 600)));
             }
-            xPos += 10 + Math.random() * (50 - 10);
+            xPos += 10;
         } while (xPos < L11_TreesNBees.crc2.canvas.width);
     }
     function createBees(_nBee) {

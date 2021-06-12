@@ -38,13 +38,13 @@ namespace L11_TreesNBees {
             let flowerType: number = Math.floor(Math.random() * 2) + 1;
 
             if (flowerType == 1) {
-                flowers.push(new GoldenFlowers(xPos, 50 + (crc2.canvas.height * golden), (50 + Math.random() * 600)));
+                flowers.push(new GoldenFlowers(xPos, (crc2.canvas.height * golden), (50 + Math.random() * 600)));
             }
             else {
-                flowers.push(new PurpleFlowers(xPos, 50 + (crc2.canvas.height * golden), (50 + Math.random() * 600)));
+                flowers.push(new PurpleFlowers(xPos, (crc2.canvas.height * golden), (50 + Math.random() * 600)));
             }
             
-            xPos += 10 + Math.random() * (50 - 10);
+            xPos += 10;
         }
         while (xPos < crc2.canvas.width);
     }

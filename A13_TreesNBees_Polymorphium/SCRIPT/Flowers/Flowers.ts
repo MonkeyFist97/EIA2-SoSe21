@@ -53,7 +53,6 @@ namespace L11_TreesNBees {
             crc2.fillStyle = "orange";
             crc2.fill();
             crc2.restore();
-            this.xPos += 10;
         }
     }
 
@@ -120,9 +119,7 @@ namespace L11_TreesNBees {
             crc2.closePath();
             crc2.fillStyle = whiteTongue;
             crc2.fill();
-
             crc2.restore();
-            this.xPos += 25;
         }
     }
 }

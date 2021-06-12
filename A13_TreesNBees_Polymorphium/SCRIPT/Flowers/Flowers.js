@@ -46,7 +46,6 @@ var L11_TreesNBees;
             L11_TreesNBees.crc2.fillStyle = "orange";
             L11_TreesNBees.crc2.fill();
             L11_TreesNBees.crc2.restore();
-            this.xPos += 10;
         }
     }
     L11_TreesNBees.GoldenFlowers = GoldenFlowers;
@@ -108,7 +107,6 @@ var L11_TreesNBees;
             L11_TreesNBees.crc2.fillStyle = whiteTongue;
             L11_TreesNBees.crc2.fill();
             L11_TreesNBees.crc2.restore();
-            this.xPos += 25;
         }
     }
     L11_TreesNBees.PurpleFlowers = PurpleFlowers;
