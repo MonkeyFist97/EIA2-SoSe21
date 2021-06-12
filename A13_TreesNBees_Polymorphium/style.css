@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    background-image: url(peaceful-blur-background-1x.jpg);
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 40px;
+    font-style: italic; 
+    justify-content: center;
+    align-items: center;
+    color: #edc0dd;
+    font-weight: lighter;
+    -webkit-text-stroke: 1px grey;
+}
+
+canvas {
+    border: solid brown 3px;
+    border-radius: 15px;
+}
