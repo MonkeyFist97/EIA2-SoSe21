@@ -19,7 +19,6 @@ var L11_TreesNBees;
             super(_xPos, _yRandomMin, _yRandomMax);
         }
         draw() {
-            // let randomScale: number = . + Math.random() * (0.8 - 0.5);
             let y = this.yRandomMin + this.yRandomMax;
             L11_TreesNBees.crc2.save();
             L11_TreesNBees.crc2.translate(this.xPos, y);
