@@ -6,28 +6,6 @@ namespace L11_TreesNBees {
         y: number;
     }
 
-    window.addEventListener("load", handleLoad);
-    let crc2: CanvasRenderingContext2D;
-    let golden: number = 0.62;
-
-    export function handleLoad(_event: Event): void {
-        let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
-        if (!canvas)
-            return;
-        crc2 = <CanvasRenderingContext2D>canvas.getContext("2d");
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        let horizon: number = crc2.canvas.height * golden;
-        let posMountains: Vector = { x: 0, y: horizon };
-
-        drawBackground();
-        drawSun({ x: (canvas.width / 10), y: (canvas.height / 15) });
-        drawMountains(posMountains, 300, 200, "#747c8a", "white");
-        drawMountains(posMountains, 200, 150, "#747c8a", "lightgrey");
-        drawTree();
-    }
-
     // HORIZON
     export function drawBackground(): void {
         let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, crc2.canvas.height);
@@ -99,15 +77,17 @@ namespace L11_TreesNBees {
 
         do {
             let y: number = (crc2.canvas.height * golden) + (38 + Math.random() * (50 - 20));
+            let a: number = 0;
+            let b: number = 0;
+            let c: number = 0;
+            
             crc2.save();
             crc2.translate(x, y);
             crc2.fillStyle = "#6e4242";
             crc2.fillRect(0, 0, 30, -50);
             crc2.scale(0.9, 0.9);
 
-            let a: number = 0;
-            let b: number = 0;
-            let c: number = 0;
+            
 
             for (let x: number = 0; x <= 2; x++) {
 
